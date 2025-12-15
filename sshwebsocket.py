@@ -5,7 +5,7 @@ import os
 import pty
 import select
 
-SSH_HOST = "192.168.100.18"
+SSH_HOST = "IP_ADDRESS" # Remplacez par l'adresse IP de la cible SSH
 SSH_USER = "minitel"
 SSH_PORT = 22
 
@@ -17,7 +17,7 @@ async def handler(ws):
     SSH_HOST,
     port=SSH_PORT,
     username=SSH_USER,
-    password="lol"
+    password="PASSWORD"  # Remplacez par le mot de passe approprié
 )
 
     chan = client.invoke_shell(
