@@ -1,0 +1,2 @@
+paramiko>=3.4
+websockets>=11.0
