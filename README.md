@@ -44,8 +44,19 @@ Ce projet permet d'utiliser un Minitel comme **terminal interactif** pour accéd
 * Python ≥ 3.10
 * `paramiko`
 * `websockets`
+## Récupération du projet (git clone)
+
+Depuis une machine disposant de Git :
 
 ```sh
+git clone https://github.com/labbej27/sshminitel.git
+cd sshminitel
+```
+Création d’un environnement virtuel Python (recommandé) :
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -57,7 +68,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥️ Installation du terminfo Minitel (OBLIGATOIRE)
+## Installation du terminfo Minitel (OBLIGATOIRE)
 
 Sur le **serveur SSH** :
 
@@ -127,7 +138,7 @@ echo $TERM
 ##### Doit afficher : m1b
 ---
 
-## ⚙️ Configuration du compte SSH
+## Configuration du compte SSH
 
 Dans `~/.profile` de l'utilisateur SSH :
 
